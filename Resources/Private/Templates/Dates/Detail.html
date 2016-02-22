@@ -1,0 +1,46 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <f:link.action action="show" arguments="{date: date}" pageUid="169"> Show </f:link.action>
+
+    <f:if condition="{date.description}">
+        <div class="date-description">
+            <f:translate key="tx_dates_domain_model_date.description"></f:translate>:
+            <f:format.html>{date.description}</f:format.html>
+        </div>
+    </f:if>
+    <f:if condition="{date.fair_hall}">
+        <div class="date-fair_hall">
+            {date.fair_hall}
+        </div>
+    </f:if>
+    <f:if condition="{date.booth_number}">
+        <div class="date-booth_number">
+            {date.booth_number}
+        </div>
+    </f:if>
+
+    <f:if condition="{date.location}">
+        <div class="date-location">
+            <f:translate key="tx_dates_domain_model_date.location" />:
+            <ul>
+                <f:for each="{date.location}" as="location">
+                    <li>{location.name}</li>
+                </f:for>
+            </ul>
+        </div>
+    </f:if>
+
+    <f:if condition="{date.representative}">
+        <div class="date-representative">
+            <f:translate key="tx_dates_domain_model_date.representative" />:
+            <ul>
+                <f:for each="{date.representative}" as="representative">
+                    <li>{representative.name}</li>
+                </f:for>
+            </ul>
+        </div>
+    </f:if>
+
+</f:section>

@@ -1,0 +1,61 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Optionen</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:dates/Resources/Private/Language/locallang_db.xlf:tx_dates.plugin.dates.action.switch
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">LLL:EXT:dates/Resources/Private/Language/locallang_db.xlf:tx_dates.plugin.dates.action.list</numIndex>
+                                        <numIndex index="1">Dates->list;Dates->show</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">LLL:EXT:dates/Resources/Private/Language/locallang_db.xlf:tx_dates.plugin.dates.action.teaser</numIndex>
+                                        <numIndex index="1">Dates->teaser</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+
+                    <settings.listPageUid>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:dates/Resources/Private/Language/locallang_db.xlf:tx_cart.plugin.dates.action.teaser.listPageUid
+                            </label>
+                            <displayCond>FIELD:switchableControllerActions:=:Dates->teaser</displayCond>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.listPageUid>
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,7 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+    <f:for each="{dates}" as="date">
+        <f:render partial="Dates/DetailHead" arguments="{date:date}" />
+    </f:for>
+</f:section>

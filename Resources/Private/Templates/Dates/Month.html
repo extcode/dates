@@ -1,0 +1,18 @@
+{namespace dates=Extcode\Dates\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="main">
+    <f:flashMessages />
+
+    <f:link.action action="list" arguments="{year: '{dates:calc.prevYear(year:year, month: month)}', month: '{dates:calc.prevMonth(month: month)}'}"> <f:translate key="tx_dates_domain_model_date.month.prev">previous Month</f:translate> </f:link.action>
+    <f:link.action action="list" arguments="{year: '{dates:calc.nextYear(year:year, month: month)}', month: '{dates:calc.nextMonth(month: month)}'}"> <f:translate key="tx_dates_domain_model_date.month.next">next Month</f:translate> </f:link.action>
+
+    <dates:monthWithTable year="{year}" month="{month}" dates="{dates}" showWeekNumber="true"/>
+    <dates:monthWithTable year="{year}" month="{month}" offset="1" dates="{dates}" showWeekNumber="true"/>
+    <dates:monthWithTable year="{year}" month="{month}" offset="2" dates="{dates}" showWeekNumber="true"/>
+
+    <f:link.action action="list" arguments="{year: '{dates:calc.prevYear(year:year, month: month)}', month: '{dates:calc.prevMonth(month: month)}'}"> <f:translate key="tx_dates_domain_model_date.month.prev">previous Month</f:translate> </f:link.action>
+    <f:link.action action="list" arguments="{year: '{dates:calc.nextYear(year:year, month: month)}', month: '{dates:calc.nextMonth(month: month)}'}"> <f:translate key="tx_dates_domain_model_date.month.next">next Month</f:translate> </f:link.action>
+
+</f:section>

@@ -1,0 +1,119 @@
+<div class="date-title">
+    <f:translate key="tx_dates_domain_model_date.title"></f:translate>
+    : {date.title} <a href="{date.website}" target="_blank">www</a>
+</div>
+<div class="date-start">
+    <f:translate key="tx_dates_domain_model_date.start"></f:translate>
+    :
+    <f:format.date format="d.m.Y H:i">{date.start}</f:format.date>
+</div>
+<div class="date-end">
+    <f:translate key="tx_dates_domain_model_date.end"></f:translate>
+    :
+    <f:format.date format="d.m.Y H:i">{date.end}</f:format.date>
+</div>
+
+<f:if condition="{date.description}">
+    <div class="date-description">
+        <f:translate key="tx_dates_domain_model_date.description"></f:translate>
+        :
+        <f:format.html>{date.description}</f:format.html>
+    </div>
+</f:if>
+<f:if condition="{date.fair_hall}">
+    <div class="date-fair_hall">
+        {date.fair_hall}
+    </div>
+</f:if>
+<f:if condition="{date.booth_number}">
+    <div class="date-booth_number">
+        {date.booth_number}
+    </div>
+</f:if>
+
+<f:if condition="{date.location}">
+    <div class="date-location">
+        <f:translate key="tx_dates_domain_model_date.location"/>
+        <ul>
+            <f:for each="{date.location}" as="location">
+                <li>{location.name}</li>
+            </f:for>
+        </ul>
+    </div>
+</f:if>
+
+<f:if condition="{date.representative}">
+    <div class="date-representative">
+        <f:translate key="tx_dates_domain_model_date.representative"/>
+        <ul>
+            <f:for each="{date.representative}" as="representative">
+                <li>{representative.name}</li>
+            </f:for>
+        </ul>
+    </div>
+</f:if>
+
+<div>
+    <f:form method="post" action="register" controller="Dates" name="registration" object="{registration}"
+            arguments="{date : date}">
+        <ul>
+            <li>
+                <label for="appointment" class="mandatory">
+                    <f:translate key="tx_dates_domain_model_date.form.appointment"/>
+                </label>
+                <f:form.textfield property="appointment"/>
+            </li>
+            <li>
+                <label for="name" class="mandatory">
+                    <f:translate key="tx_dates_domain_model_date.form.name"/>
+                </label>
+                <f:form.textfield property="name"/>
+            </li>
+            <li>
+                <label for="company">
+                    <f:translate key="tx_dates_domain_model_date.form.company"/>
+                </label>
+                <f:form.textfield property="company"/>
+            </li>
+            <li>
+                <label for="street">
+                    <f:translate key="tx_dates_domain_model_date.form.street"/>
+                </label>
+                <label for="streetNumber">
+                    <f:translate key="tx_dates_domain_model_date.form.street_number"/>
+                </label>
+                <f:form.textfield property="street"/>
+                <f:form.textfield property="streetNumber"/>
+            </li>
+            <li>
+                <label for="zig">
+                    <f:translate key="tx_dates_domain_model_date.form.zip"/>
+                </label>
+                <label for="city">
+                <f:translate key="tx_dates_domain_model_date.form.city"/>
+                </label>
+                <f:form.textfield property="zip"/>
+                <f:form.textfield property="city"/>
+            </li>
+            <li>
+                <label for="phone" class="mandatory">
+                    <f:translate key="tx_dates_domain_model_date.form.phone"/>
+                </label>
+                <f:form.textfield property="phone"/>
+            </li>
+            <li>
+                <label for="email" class="mandatory">
+                    <f:translate key="tx_dates_domain_model_date.form.email"/>
+                </label>
+                <f:form.textfield property="email"/>
+            </li>
+            <li>
+                <label for="comment">
+                    <f:translate key="tx_dates_domain_model_date.form.comment"/>
+                </label>
+                <f:form.textarea property="comment" rows="5" cols="40"/>
+            </li>
+            <f:form.submit value="{f:translate(key:'tx_dates_domain_model_date.form.register')}"/>
+        </ul>
+    </f:form>
+</div>

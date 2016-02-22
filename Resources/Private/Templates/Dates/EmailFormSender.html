@@ -1,0 +1,52 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+    Vielen Dank für Ihre Anfrage:
+
+    <div class="date-title">
+        <f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.title"></f:translate>: {date.title} <a href="{date.website}" target="_blank">www</a>
+    </div>
+    <div class="date-start">
+        <f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.start"></f:translate>: <f:format.date format="d.m.Y H:i">{date.start}</f:format.date>
+    </div>
+    <div class="date-end">
+        <f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.end"></f:translate>: <f:format.date format="d.m.Y H:i">{date.end}</f:format.date>
+    </div>
+
+    Ihre Daten:
+
+    <div>
+        <ul>
+            <li>
+                <span><f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.appointment" /></span>:
+                {registration.appointment}
+            </li>
+            <li>
+                <span><f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.company" /></span>:
+                {registration.company}
+            </li>
+            <li>
+                <span><f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.street" /> / <f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.street_number" /></span>:
+                {registration.street} {registration.streetNumber}
+            </li>
+            <li>
+                <span><f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.zip" /> / <f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.city" /></span>:
+                {registration.zip} {registration.city}
+            </li>
+            <li>
+                <span><f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.phone" /></span>:
+                {registration.phone}
+            </li>
+            <li>
+                <span><f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.email" /></span>:
+                {registration.email}
+            </li>
+            <f:if condition="{registration.comment}">
+                <li>
+                    <span><f:translate key="LLL:EXT:dates/Resources/Private/Language/locallang.xml:tx_dates_domain_model_date.form.comment" /></span>:
+                    {registration.comment}
+                </li>
+            </f:if>
+        </ul>
+    </div>
+</f:section>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Dates extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_dates_domain_model_date.group.fair">Fair</label>
+			<label index="tx_dates_domain_model_date.group.date">Date</label>
+			<label index="tx_dates_domain_model_date">Dates</label>
+			<label index="tx_dates_domain_model_date.plugintitle">Dates</label>
+			<label index="tx_dates_domain_model_date.typ">Typ</label>
+			<label index="tx_dates_domain_model_date.typ.0">Fair</label>
+			<label index="tx_dates_domain_model_date.typ.1">Event</label>
+			<label index="tx_dates_domain_model_date.target_group">Target Group</label>
+			<label index="tx_dates_domain_model_date.target_group.0">Professional Audience</label>
+			<label index="tx_dates_domain_model_date.target_group.1">End-User Audience</label>
+			<label index="tx_dates_domain_model_date.title">Title</label>
+			<label index="tx_dates_domain_model_date.short_title">Short Titel (Calendar View)</label>
+			<label index="tx_dates_domain_model_date.is_full_time">Is Full Time</label>
+			<label index="tx_dates_domain_model_date.start">Start</label>
+			<label index="tx_dates_domain_model_date.end">End</label>
+			<label index="tx_dates_domain_model_date.opening_times">Opening Times</label>
+			<label index="tx_dates_domain_model_date.website">Website</label>
+			<label index="tx_dates_domain_model_date.fair_hall">Fair Hall</label>
+			<label index="tx_dates_domain_model_date.booth_number">Booth Number</label>
+			<label index="tx_dates_domain_model_date.description">Description</label>
+			<label index="tx_dates_domain_model_date.is_bookable">Is Bookable</label>
+			<label index="tx_dates_domain_model_date.is_teaser">Is Teaser</label>
+			<label index="tx_dates_domain_model_date.location">Location</label>
+			<label index="tx_dates_domain_model_date.representative">Representative</label>
+
+			<label index="tx_dates_domain_model_date.weekday.1">Monday</label>
+			<label index="tx_dates_domain_model_date.weekday.2">Tuesday</label>
+			<label index="tx_dates_domain_model_date.weekday.3">Wednesday</label>
+			<label index="tx_dates_domain_model_date.weekday.4">Thursday</label>
+			<label index="tx_dates_domain_model_date.weekday.5">Friday</label>
+			<label index="tx_dates_domain_model_date.weekday.6">Saturday</label>
+			<label index="tx_dates_domain_model_date.weekday.7">Sunday</label>
+
+			<label index="tx_dates_domain_model_date.calendar_week">Week</label>
+
+			<label index="tx_dates_domain_model_date.form.appointment">Appointment</label>
+			<label index="tx_dates_domain_model_date.form.participant">Participant</label>
+			<label index="tx_dates_domain_model_date.form.date">Date</label>
+			<label index="tx_dates_domain_model_date.form.name">Name</label>
+			<label index="tx_dates_domain_model_date.form.company">Company</label>
+			<label index="tx_dates_domain_model_date.form.position">Position</label>
+			<label index="tx_dates_domain_model_date.form.street">Street</label>
+			<label index="tx_dates_domain_model_date.form.streetnumber">Streetnumber</label>
+			<label index="tx_dates_domain_model_date.form.zip">Zip</label>
+			<label index="tx_dates_domain_model_date.form.city">City</label>
+			<label index="tx_dates_domain_model_date.form.phone">Phone</label>
+			<label index="tx_dates_domain_model_date.form.email">Email</label>
+			<label index="tx_dates_domain_model_date.form.comment">Comment</label>
+			<label index="tx_dates_domain_model_date.form.register">Register</label>
+			<label index="tx_dates_domain_model_date.form.hint.mandatory">Please fill out all mandatory fields!</label>
+
+			<label index="tx_dates_domain_model_date.mail.subject">ticket request</label>
+
+			<label index="tx_dates_domain_model_date.month.prev">previous month</label>
+			<label index="tx_dates_domain_model_date.month.next">next month</label>
+			<label index="tx_dates_domain_model_date.month.1">January</label>
+			<label index="tx_dates_domain_model_date.month.2">February</label>
+			<label index="tx_dates_domain_model_date.month.3">March</label>
+			<label index="tx_dates_domain_model_date.month.4">April</label>
+			<label index="tx_dates_domain_model_date.month.5">May</label>
+			<label index="tx_dates_domain_model_date.month.6">June</label>
+			<label index="tx_dates_domain_model_date.month.7">July</label>
+			<label index="tx_dates_domain_model_date.month.8">August</label>
+			<label index="tx_dates_domain_model_date.month.9">September</label>
+			<label index="tx_dates_domain_model_date.month.10">October</label>
+			<label index="tx_dates_domain_model_date.month.11">November</label>
+			<label index="tx_dates_domain_model_date.month.12">December</label>
+		</languageKey>
+
+		<languageKey index="de" type="array">
+			<label index="tx_dates_domain_model_date.group.fair">Messe</label>
+			<label index="tx_dates_domain_model_date.group.date">Termin</label>
+			<label index="tx_dates_domain_model_date">Veranstaltungen</label>
+			<label index="tx_dates_domain_model_date.plugintitle">Veranstaltungen</label>
+			<label index="tx_dates_domain_model_date.typ">Typ</label>
+			<label index="tx_dates_domain_model_date.typ.0">Messe</label>
+			<label index="tx_dates_domain_model_date.typ.1">Veranstaltung</label>
+			<label index="tx_dates_domain_model_date.target_group">Zielgruppe</label>
+			<label index="tx_dates_domain_model_date.target_group.0">Fachpublikum</label>
+			<label index="tx_dates_domain_model_date.target_group.1">Endverbraucherpublikum</label>
+			<label index="tx_dates_domain_model_date.title">Titel</label>
+			<label index="tx_dates_domain_model_date.short_title">Kurztitel (Kalenderansicht)</label>
+			<label index="tx_dates_domain_model_date.is_full_time">ist ganztägig?</label>
+			<label index="tx_dates_domain_model_date.start">Beginn</label>
+			<label index="tx_dates_domain_model_date.end">Ende</label>
+			<label index="tx_dates_domain_model_date.opening_times">Öffnungszeiten</label>
+			<label index="tx_dates_domain_model_date.website">Webseite</label>
+			<label index="tx_dates_domain_model_date.fair_hall">Messehalle</label>
+			<label index="tx_dates_domain_model_date.booth_number">Standnummer</label>
+			<label index="tx_dates_domain_model_date.description">Beschreibung</label>
+			<label index="tx_dates_domain_model_date.is_bookable">ist buchbar?</label>
+			<label index="tx_dates_domain_model_date.is_teaser">ist Teaser?</label>
+			<label index="tx_dates_domain_model_date.location">Veranstaltungsort</label>
+			<label index="tx_dates_domain_model_date.representative">Repräsentant</label>
+
+			<label index="tx_dates_domain_model_date.weekday.1">Montag</label>
+			<label index="tx_dates_domain_model_date.weekday.2">Dienstag</label>
+			<label index="tx_dates_domain_model_date.weekday.3">Mittwoch</label>
+			<label index="tx_dates_domain_model_date.weekday.4">Donnerstag</label>
+			<label index="tx_dates_domain_model_date.weekday.5">Freitag</label>
+			<label index="tx_dates_domain_model_date.weekday.6">Samstag</label>
+			<label index="tx_dates_domain_model_date.weekday.7">Sonntag</label>
+
+			<label index="tx_dates_domain_model_date.calendar_week">KW</label>
+
+			<label index="tx_dates_domain_model_date.form.appointment">Wunschtermin</label>
+			<label index="tx_dates_domain_model_date.form.participant">Teilnehmer</label>
+			<label index="tx_dates_domain_model_date.form.date">Datum</label>
+			<label index="tx_dates_domain_model_date.form.name">Name</label>
+			<label index="tx_dates_domain_model_date.form.company">Firma</label>
+			<label index="tx_dates_domain_model_date.form.position">Position</label>
+			<label index="tx_dates_domain_model_date.form.street">Straße</label>
+			<label index="tx_dates_domain_model_date.form.street_number">Nr.</label>
+			<label index="tx_dates_domain_model_date.form.zip">PLZ</label>
+			<label index="tx_dates_domain_model_date.form.city">Ort</label>
+			<label index="tx_dates_domain_model_date.form.phone">Telefonnummer</label>
+			<label index="tx_dates_domain_model_date.form.email">E-Mail Adresse</label>
+			<label index="tx_dates_domain_model_date.form.comment">Bemerkungen</label>
+			<label index="tx_dates_domain_model_date.form.register">registrieren</label>
+			<label index="tx_dates_domain_model_date.form.hint.mandatory">Bitte füllen Sie alle markierten Felder aus!</label>
+
+			<label index="tx_dates_domain_model_date.mail.subject">Ticketanfrage</label>
+
+			<label index="tx_dates_domain_model_date.month.prev">vorheriger Monat</label>
+			<label index="tx_dates_domain_model_date.month.next">nächster Monat</label>
+			<label index="tx_dates_domain_model_date.month.1">Januar</label>
+			<label index="tx_dates_domain_model_date.month.2">Februar</label>
+			<label index="tx_dates_domain_model_date.month.3">März</label>
+			<label index="tx_dates_domain_model_date.month.4">April</label>
+			<label index="tx_dates_domain_model_date.month.5">Mai</label>
+			<label index="tx_dates_domain_model_date.month.6">Juni</label>
+			<label index="tx_dates_domain_model_date.month.7">Juli</label>
+			<label index="tx_dates_domain_model_date.month.8">August</label>
+			<label index="tx_dates_domain_model_date.month.9">September</label>
+			<label index="tx_dates_domain_model_date.month.10">Oktober</label>
+			<label index="tx_dates_domain_model_date.month.11">November</label>
+			<label index="tx_dates_domain_model_date.month.12">Dezember</label>
+		</languageKey>
+	</data>
+</T3locallang>

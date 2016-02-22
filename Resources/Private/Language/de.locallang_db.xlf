@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-02-03T15:20:00Z" product-name="dates">
+        <header/>
+        <body>
+            <trans-unit id="tx_dates.plugin.dates">
+                <source>Dates: Dates</source>
+                <target>Dates: Daten</target>
+            </trans-unit>
+            <trans-unit id="tx_dates.plugin.dates.action.switch">
+                <source>choose an Action</source>
+                <target>Aktion auswählen </target>
+            </trans-unit>
+            <trans-unit id="tx_dates.plugin.dates.action.list">
+                <source>List</source>
+                <target>Liste</target>
+            </trans-unit>
+            <trans-unit id="tx_dates.plugin.dates.action.teaser">
+                <source>Teaser</source>
+                <target>Teaser</target>
+            </trans-unit>
+            <trans-unit id="tx_dates.plugin.singledate">
+                <source>Dates: Single Date</source>
+                <target>Dates: Einzeldatum</target>
+            </trans-unit>
+
+            <trans-unit id="tx_dates_domain_model_date.group.fair">
+                <source>Fair</source>
+                <target>Messe</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.group.date">
+                <source>Date</source>
+                <target>Termin</target>
+            </trans-unit>
+
+            <trans-unit id="tx_dates_domain_model_date.plugin.calendar">
+                <source>Dates Calendar</source>
+                <target>Veranstaltung Kalender</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.plugin.teaser">
+                <source>Dates Teaser</source>
+                <target>Veranstaltung Teaser</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.plugin.singledate">
+                <source>Single Calendardate</source>
+                <target>Einzelne Veranstaltung</target>
+            </trans-unit>
+            <trans-unit id="flexform.plugin.singledate.select_date">
+                <source>select a date</source>
+                <target>Veranstaltung wählen</target>
+            </trans-unit>
+
+            <trans-unit id="tx_dates_domain_model_date">
+                <source>Dates</source>
+                <target>Veranstaltungen</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.typ">
+                <source>Typ</source>
+                <target>Typ</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.typ.0">
+                <source>Fair</source>
+                <target>Messe</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.typ.1">
+                <source>Event</source>
+                <target>Veranstaltung</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.target_group">
+                <source>Target Group</source>
+                <target>Zielgruppe</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.target_group.0">
+                <source>Professional Audience</source>
+                <target>Fachpublikum</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.target_group.1">
+                <source>End-User Audience</source>
+                <target>Endverbraucherpublikum</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.title">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.short_title">
+                <source>Short Titel (Calendar View)</source>
+                <target>Kurztitel (Kalenderansicht)</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.is_full_time">
+                <source>is full time?</source>
+                <target>ist ganztägig?</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.start">
+                <source>Start</source>
+                <target>Start Zeit</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.end">
+                <source>End</source>
+                <target>End Zeit</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.opening_times">
+                <source>Opening Times</source>
+                <target>Öffnungszeiten</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.website">
+                <source>Website</source>
+                <target>Webseite</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.fair_hall">
+                <source>Fair Hall</source>
+                <target>Messehalle</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.booth_number">
+                <source>Booth Number</source>
+                <target>Standnummer</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.description">
+                <source>Description</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.is_bookable">
+                <source>Is Bookable</source>
+                <target>ist buchbar?</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.is_teaser">
+                <source>Is Teaser</source>
+                <target>ist Teaser?</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.location">
+                <source>Location</source>
+                <target>Veranstaltungsort</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.representative">
+                <source>Representative</source>
+                <target>Repräsentant</target>
+            </trans-unit>
+
+            <trans-unit id="tx_dates_domain_model_date.form.date">
+                <source>Date</source>
+                <target>Datum</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.name">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.company">
+                <source>Company</source>
+                <target>Firma</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.street">
+                <source>Street</source>
+                <target>Straße</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.streetnumber">
+                <source>Streetnumber</source>
+                <target>Hausnummer</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.zip">
+                <source>Zip</source>
+                <target>PLZ</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.city">
+                <source>City</source>
+                <target>Ort</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.phone">
+                <source>Phone</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.email">
+                <source>Email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_date.form.comment">
+                <source>Comment</source>
+                <target>Kommentar</target>
+            </trans-unit>
+
+            <trans-unit id="tx_dates_domain_model_location.title">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_location.short_title">
+                <source>Short Titel</source>
+                <target>Kurztitel</target>
+            </trans-unit>
+            <trans-unit id="tx_dates_domain_model_location.description">
+                <source>Description</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+
+            <trans-unit id="tx_dates_domain_model_locations">
+                <source>Locations</source>
+                <target>Veranstaltungsorte</target>
+            </trans-unit>
+            <trans-unit id="tt_address.tx_extbase_type.Tx_Dates_Locations">
+                <source>Dates Locations</source>
+                <target>Veranstaltungsorte</target>
+            </trans-unit>
+
+            <trans-unit id="tx_dates_domain_model_representatives">
+                <source>Representatives</source>
+                <target>Repräsentanten</target>
+            </trans-unit>
+            <trans-unit id="tt_address.tx_extbase_type.Tx_Dates_Representatives">
+                <source>Dates Representatives</source>
+                <target>Repräsentanten</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>
