@@ -1,0 +1,61 @@
+{
+    "name": "extcode/dates",
+    "type": "typo3-cms-extension",
+    "description": "Dates and Events with Locations",
+    "homepage": "https://dates.extco.de",
+    "license": [
+        "GPL-2.0+"
+    ],
+    "keywords": [
+        "TYPO3 CMS",
+        "dates",
+        "events"
+    ],
+    "authors": [
+        {
+            "name": "Daniel Lorenz",
+            "email": "ext.dates@extco.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "typo3/cms": "^6.2 || ^7.6"
+    },
+    "require-dev": {
+        "namelesscoder/typo3-repository-client": "^1.2.0",
+        "mikey179/vfsStream": "~1.6.0",
+        "phpunit/phpunit": "~4.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Extcode\\Dates\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Extcode\\Dates\\Tests\\": "Tests/",
+            "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/",
+            "TYPO3\\CMS\\Fluid\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/fluid/Tests/"
+        }
+    },
+    "replace": {
+        "dates": "self.version"
+    },
+    "config": {
+        "preferred-install": {
+            "typo3/cms": "source"
+        },
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web",
+            "Package": {
+                "partOfMinimalUsableSystem": true
+            }
+        }
+    }
+}

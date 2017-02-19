@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Dates',
-    'description' => '',
+    'description' => 'Dates and Events with Locations',
     'category' => 'fe',
     'author' => 'Daniel Lorenz',
     'author_email' => 'ext.dates@extco.de',
@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
     'modify_tables' => '',
     'clearCacheOnLoad' => 0,
     'lockType' => '',
-    'version' => '0.1.0',
+    'version' => '0.1.1',
     'constraints' => [
         'depends' => [
             'typo3' => '6.2.0-7.99.99',
