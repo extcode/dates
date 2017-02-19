@@ -1,7 +1,5 @@
 config.tx_extbase {
     persistence {
-        storagePid = 165,166
-
         classes {
             \Extcode\Dates\Domain\Model\Representative {
                 mapping {
