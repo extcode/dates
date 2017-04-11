@@ -89,8 +89,12 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getTitleReturnsInitialValueForString()
+    public function getTitleInitiallyReturnsEmptyString()
     {
+        $this->assertSame(
+            '',
+            $this->fixture->getTitle()
+        );
     }
 
     /**
@@ -98,11 +102,35 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setTitleForStringSetsTitle()
     {
-        $this->fixture->setTitle('Conceived at T3CON10');
+        $this->fixture->setTitle('Title');
 
         $this->assertSame(
-            'Conceived at T3CON10',
+            'Title',
             $this->fixture->getTitle()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function getShortTitleInitiallyReturnsEmptyString()
+    {
+        $this->assertSame(
+            '',
+            $this->fixture->getShortTitle()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setShortTitleForStringSetsShortTitle()
+    {
+        $this->fixture->setShortTitle('ShortTitle');
+
+        $this->assertSame(
+            'ShortTitle',
+            $this->fixture->getShortTitle()
         );
     }
 
@@ -137,19 +165,10 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getWebsiteReturnsInitialValueForString()
+    public function getWebsiteInitiallyReturnsEmptyString()
     {
-    }
-
-    /**
-     * @test
-     */
-    public function setWebsiteForStringSetsWebsite()
-    {
-        $this->fixture->setWebsite('Conceived at T3CON10');
-
         $this->assertSame(
-            'Conceived at T3CON10',
+            '',
             $this->fixture->getWebsite()
         );
     }
@@ -157,19 +176,23 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getBoothNumberReturnsInitialValueForString()
+    public function setWebsiteForStringSetsWebsite()
     {
+        $this->fixture->setWebsite('www.example.com');
+
+        $this->assertSame(
+            'www.example.com',
+            $this->fixture->getWebsite()
+        );
     }
 
     /**
      * @test
      */
-    public function setBoothNumberForStringSetsBoothNumber()
+    public function getBoothNumberInitiallyReturnsEmptyString()
     {
-        $this->fixture->setBoothNumber('Conceived at T3CON10');
-
         $this->assertSame(
-            'Conceived at T3CON10',
+            '',
             $this->fixture->getBoothNumber()
         );
     }
@@ -177,8 +200,49 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getDescriptionReturnsInitialValueForString()
+    public function setBoothNumberForStringSetsBoothNumber()
     {
+        $this->fixture->setBoothNumber('BoothNumber');
+
+        $this->assertSame(
+            'BoothNumber',
+            $this->fixture->getBoothNumber()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function getFairHallInitiallyReturnsEmptyString()
+    {
+        $this->assertSame(
+            '',
+            $this->fixture->getFairHall()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setFairHallForStringSetsFairHall()
+    {
+        $this->fixture->setFairHall('FairHall');
+
+        $this->assertSame(
+            'FairHall',
+            $this->fixture->getFairHall()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function getDescriptionInitiallyReturnsEmptyString()
+    {
+        $this->assertSame(
+            '',
+            $this->fixture->getDescription()
+        );
     }
 
     /**
@@ -186,10 +250,10 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setDescriptionForStringSetsDescription()
     {
-        $this->fixture->setDescription('Conceived at T3CON10');
+        $this->fixture->setDescription('Description');
 
         $this->assertSame(
-            'Conceived at T3CON10',
+            'Description',
             $this->fixture->getDescription()
         );
     }
@@ -250,7 +314,7 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
         $newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->assertEquals(
             $newObjectStorage,
-            $this->fixture->getLocation()
+            $this->fixture->getLocations()
         );
     }
 
@@ -262,11 +326,11 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
         $location = new \Extcode\Dates\Domain\Model\Location();
         $objectStorageHoldingExactlyOneLocation = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $objectStorageHoldingExactlyOneLocation->attach($location);
-        $this->fixture->setLocation($objectStorageHoldingExactlyOneLocation);
+        $this->fixture->setLocations($objectStorageHoldingExactlyOneLocation);
 
         $this->assertSame(
             $objectStorageHoldingExactlyOneLocation,
-            $this->fixture->getLocation()
+            $this->fixture->getLocations()
         );
     }
 
@@ -282,7 +346,7 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 
         $this->assertEquals(
             $objectStorageHoldingExactlyOneLocation,
-            $this->fixture->getLocation()
+            $this->fixture->getLocations()
         );
     }
 
@@ -300,7 +364,7 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 
         $this->assertEquals(
             $localObjectStorage,
-            $this->fixture->getLocation()
+            $this->fixture->getLocations()
         );
     }
 
@@ -368,5 +432,3 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     }
 
 }
-
-?>

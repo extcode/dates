@@ -1,0 +1,7 @@
+.Build
+composer.lock
+
+Documentation/_make
+
+.DS_Store
+.idea

@@ -46,14 +46,14 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      * @validate NotEmpty
      */
-    protected $title;
+    protected $title = '';
 
     /**
      * shortTitle
      *
      * @var string
      */
-    protected $shortTitle;
+    protected $shortTitle = '';
 
     /**
      * isFullTime
@@ -90,28 +90,28 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      *
      * @var string
      */
-    protected $website;
+    protected $website = '';
 
     /**
      * fairHall
      *
      * @var string
      */
-    protected $fairHall;
+    protected $fairHall = '';
 
     /**
      * boothNumber
      *
      * @var string
      */
-    protected $boothNumber;
+    protected $boothNumber = '';
 
     /**
      * description
      *
      * @var string
      */
-    protected $description;
+    protected $description = '';
 
     /**
      * isBookable
@@ -142,6 +142,16 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @lazy
      */
     protected $representative;
+
+    /**
+     * Product constructor.
+     *
+     */
+    public function __construct()
+    {
+        $this->locations = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->representative = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+    }
 
     /**
      * Returns the typ

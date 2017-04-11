@@ -29,14 +29,14 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      *
      * @var string
      */
-    protected $title;
+    protected $title = '';
 
     /**
      * Description
      *
      * @var string
      */
-    protected $description;
+    protected $description = '';
 
     /**
      * Returns Title

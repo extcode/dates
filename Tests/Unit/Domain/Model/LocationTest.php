@@ -41,9 +41,48 @@ class LocationTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function dummyTestToNotLeaveThisFileEmpty()
+    public function getTitleInitiallyReturnsEmptyString()
     {
-        $this->markTestIncomplete();
+        $this->assertSame(
+            '',
+            $this->fixture->getTitle()
+        );
     }
 
+    /**
+     * @test
+     */
+    public function setTitleForStringSetsTitle()
+    {
+        $this->fixture->setTitle('Title');
+
+        $this->assertSame(
+            'Title',
+            $this->fixture->getTitle()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function getDescriptionInitiallyReturnsEmptyString()
+    {
+        $this->assertSame(
+            '',
+            $this->fixture->getDescription()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setDescriptionForStringSetsDescription()
+    {
+        $this->fixture->setDescription('Description');
+
+        $this->assertSame(
+            'Description',
+            $this->fixture->getDescription()
+        );
+    }
 }
