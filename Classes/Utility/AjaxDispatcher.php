@@ -16,7 +16,6 @@
 /**
  * Ajax Dispatcher
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class AjaxDispatcher
@@ -61,7 +60,7 @@ class AjaxDispatcher
     protected $arguments = [];
 
     /**
-     * @var integer
+     * @var int
      */
     protected $pageUid;
 
@@ -126,14 +125,14 @@ class AjaxDispatcher
      */
     public function init($pageUid = null)
     {
-        #define('TYPO3_MODE','FE');
+        //define('TYPO3_MODE','FE');
 
         $this->pageUid = $pageUid;
 
         $GLOBALS['TSFE'] = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('tslib_fe', $TYPO3_CONF_VARS, $pageUid, '0', 1, '', '', '', '');
         $GLOBALS['TSFE']->sys_page = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('t3lib_pageSelect');
 
-        #$GLOBALS['TSFE']->initFeuser();
+        //$GLOBALS['TSFE']->initFeuser();
         $GLOBALS['TSFE']->fe_user = \TYPO3\CMS\Frontend\Utility\EidUtility::initFeUser();
 
         return $this;
@@ -152,7 +151,6 @@ class AjaxDispatcher
     }
 
     /**
-     * @return void
      */
     public function cleanShutDown()
     {
@@ -276,5 +274,4 @@ class AjaxDispatcher
         $this->actionName = $actionName;
         return $this;
     }
-
 }

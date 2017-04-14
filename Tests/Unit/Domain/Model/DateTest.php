@@ -18,7 +18,6 @@ namespace Extcode\Dates\Tests\Domain\Model;
 /**
  * Dates Controller
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
@@ -371,8 +370,7 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getRepresentativeReturnsInitialValueForObjectStorageContainingRepresentative(
-    )
+    public function getRepresentativeReturnsInitialValueForObjectStorageContainingRepresentative()
     {
         $newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->assertEquals(
@@ -430,5 +428,4 @@ class DateTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
             $this->fixture->getRepresentative()
         );
     }
-
 }

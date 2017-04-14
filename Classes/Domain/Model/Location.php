@@ -18,7 +18,6 @@ namespace Extcode\Dates\Domain\Model;
 /**
  * Location Model
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
@@ -52,8 +51,6 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets Title
      *
      * @param string $title
-     *
-     * @return void
      */
     public function setTitle($title)
     {
@@ -74,12 +71,9 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets Description
      *
      * @param string $description
-     *
-     * @return void
      */
     public function setDescription($description)
     {
         $this->description = $description;
     }
-
 }

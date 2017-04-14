@@ -18,12 +18,10 @@ namespace Extcode\Dates\ViewHelpers\Calc;
 /**
  * NextMonthViewHelper ViewHelper
  *
- * @package date
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class NextMonthViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 {
-
     public function initializeArguments()
     {
         $this->registerArgument('month', 'integer', 'Month to Display', true);

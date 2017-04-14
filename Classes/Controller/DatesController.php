@@ -18,7 +18,6 @@ namespace Extcode\Dates\Controller;
 /**
  * Dates Controller
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
@@ -34,8 +33,6 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action calendar
-     *
-     * @return void
      */
     public function calendarAction()
     {
@@ -102,8 +99,6 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action list
-     *
-     * @return void
      */
     public function listAction()
     {
@@ -264,7 +259,6 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * action detail
      *
      * @param \Extcode\Dates\Domain\Model\Date $date
-     * @return void
      */
     public function detailAction(\Extcode\Dates\Domain\Model\Date $date)
     {
@@ -277,7 +271,6 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @param \Extcode\Dates\Domain\Model\Date $date
      * @param \Extcode\Dates\Domain\Model\Registration $registration
      * @dontvalidate $registration
-     * @return void
      */
     public function showAction(
         \Extcode\Dates\Domain\Model\Date $date,
@@ -295,8 +288,6 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action teaser
-     *
-     * @return void
      */
     public function teaserAction()
     {
@@ -317,7 +308,6 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      *
      * @param \Extcode\Dates\Domain\Model\Registration $registration
      * @dontvalidate $registration
-     * @return void
      */
     public function singledateAction(\Extcode\Dates\Domain\Model\Registration $registration = null)
     {
@@ -339,8 +329,6 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      *
      * @param \Extcode\Dates\Domain\Model\Date $date
      * @param \Extcode\Dates\Domain\Model\Registration $registration
-     *
-     * @return void
      */
     public function registerAction(
         \Extcode\Dates\Domain\Model\Date $date,
@@ -449,11 +437,8 @@ class DatesController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action confirmation
-     *
-     * @return void
      */
     public function confirmationAction()
     {
     }
-
 }

@@ -18,7 +18,6 @@ namespace Extcode\Dates\ViewHelpers;
 /**
  * MonthWithTable ViewHelper
  *
- * @package date
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class MonthWithTableViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
@@ -195,7 +194,6 @@ class MonthWithTableViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstract
                 $days_in_this_week++;
                 $day_counter++;
             }
-
         }
 
         if ($days_in_this_week < 8) {
@@ -336,12 +334,12 @@ class MonthWithTableViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstract
             $eID = true;
 
             if ($eID) {
-                $showActionLink = "?eID=datesAjaxDispatcher";
-                $showActionLink .= "&extensionName=Dates";
-                $showActionLink .= "&pluginName=dates";
-                $showActionLink .= "&controllerName=Dates";
-                $showActionLink .= "&actionName=detail";
-                $showActionLink .= "&arguments[date]=" . $date->getUid();
+                $showActionLink = '?eID=datesAjaxDispatcher';
+                $showActionLink .= '&extensionName=Dates';
+                $showActionLink .= '&pluginName=dates';
+                $showActionLink .= '&controllerName=Dates';
+                $showActionLink .= '&actionName=detail';
+                $showActionLink .= '&arguments[date]=' . $date->getUid();
             } else {
                 $uriBuilder = $this->controllerContext->getUriBuilder();
                 $action = 'show';
@@ -350,7 +348,6 @@ class MonthWithTableViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstract
                 ];
                 $showActionLink = $uriBuilder->uriFor($action, $arguments);
             }
-
 
             if ($date->getShortTitle()) {
                 $content .= '<li class="event-typ-' . $date->getTyp() . '">';
@@ -372,7 +369,7 @@ class MonthWithTableViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstract
      * @param int $day
      * @param int $month
      * @param int $year
-     * @param boolean $renderDates
+     * @param bool $renderDates
      * @param string $class
      * @return string
      */
@@ -432,5 +429,4 @@ class MonthWithTableViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstract
             $this->month = $month;
         }
     }
-
 }

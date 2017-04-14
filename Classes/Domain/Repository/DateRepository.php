@@ -18,12 +18,10 @@ namespace Extcode\Dates\Domain\Repository;
 /**
  * Date Repository
  *
- * @package date
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class DateRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
-
     public function findAllByMonthAndYear($month, $year, $span = 3)
     {
         $query = $this->createQuery();
@@ -148,5 +146,4 @@ class DateRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 
         return $query->execute();
     }
-
 }

@@ -9,7 +9,6 @@ $_LLL = 'LLL:EXT:dates/Resources/Private/Language/locallang_db.xlf';
 /**
  * Register Frontend Plugins
  */
-
 $pluginNames = [
     'Dates',
     'Singledate',
@@ -31,7 +30,6 @@ foreach ($pluginNames as $pluginName) {
         );
     }
 }
-
 
 $tmp_dates_columns = [
 

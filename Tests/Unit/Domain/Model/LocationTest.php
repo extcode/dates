@@ -18,7 +18,6 @@ namespace Extcode\Dates\Tests\Domain\Model;
 /**
  * Dates Controller
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class LocationTest extends \TYPO3\CMS\Core\Tests\UnitTestCase

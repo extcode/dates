@@ -16,10 +16,8 @@
 /**
  * eID Dispatcher
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
-
 require_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('dates') . 'Classes/Utility/AjaxDispatcher.php';
 
 // Init TSFE for database access

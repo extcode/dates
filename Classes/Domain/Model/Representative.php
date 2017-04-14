@@ -18,7 +18,6 @@ namespace Extcode\Dates\Domain\Model;
 /**
  * Representative Model
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class Representative extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
@@ -55,7 +54,7 @@ class Representative extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * birthday
      *
-     * @var integer
+     * @var int
      */
     protected $birthday;
 
@@ -178,8 +177,6 @@ class Representative extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets Name
      *
      * @param string $name
-     *
-     * @return void
      */
     public function setName($name)
     {
@@ -495,5 +492,4 @@ class Representative extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->zip = $zip;
     }
-
 }

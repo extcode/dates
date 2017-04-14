@@ -18,7 +18,6 @@ namespace Extcode\Dates\Domain\Model;
 /**
  * Registration Model
  *
- * @package dates
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class Registration extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity

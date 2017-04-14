@@ -18,7 +18,6 @@ namespace Extcode\Dates\Hooks;
 /**
  * DateIndexer Hook
  *
- * @package date
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class DateIndexer
@@ -29,11 +28,9 @@ class DateIndexer
      *
      * @param array $params
      * @param object $pObj
-     * @return void
      */
-    function registerIndexerConfiguration(&$params, $pObj)
+    public function registerIndexerConfiguration(&$params, $pObj)
     {
-
         $newArray = [
             'Dates Indexer',
             'txdatesindexer',
@@ -72,7 +69,6 @@ class DateIndexer
      */
     public function txdatesIndexer(&$indexerConfig, &$indexerObject)
     {
-
         $startingpointsRecursive = $indexerConfig['startingpoints_recursive'];
         $queryGenerator = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('t3lib_queryGenerator');
 
@@ -127,8 +123,8 @@ class DateIndexer
                 $content = $record['title'] . "\n"
                     . strip_tags($record['description']) . "\n"
                     . $record['short_title'] . "\n"
-                    . "Veranstaltungsort: " . $locations . "\n"
-                    . "Werksvertretung: " . $representatives . "\n";
+                    . 'Veranstaltungsort: ' . $locations . "\n"
+                    . 'Werksvertretung: ' . $representatives . "\n";
 
                 $abstract = substr($content, 0, 100) . '...';
                 $fullContent = $title . "\n" . $abstract . "\n" . $content;

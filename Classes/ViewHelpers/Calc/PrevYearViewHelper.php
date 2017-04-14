@@ -18,12 +18,10 @@ namespace Extcode\Dates\ViewHelpers\Calc;
 /**
  * PrevYearViewHelper ViewHelper
  *
- * @package date
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class PrevYearViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 {
-
     public function initializeArguments()
     {
         $this->registerArgument('year', 'integer', 'Year to Display', true);

@@ -18,7 +18,6 @@ namespace Extcode\Dates\ViewHelpers;
 /**
  * MonthWithUnorderedList ViewHelper
  *
- * @package date
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
@@ -86,7 +85,7 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
         $content .= '</div>';
 
         $content .= '<div class="table sheet">';
-        $content .= $this->renderHead();;
+        $content .= $this->renderHead();
         $content .= $this->renderBody();
         $content .= $this->renderFoot();
         $content .= '</div>';
@@ -115,9 +114,9 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
      */
     protected function renderBody()
     {
-        $day_today = date("j");
-        $month_today = date("m");
-        $year_today = date("Y");
+        $day_today = date('j');
+        $month_today = date('m');
+        $year_today = date('Y');
         $week_today = date('W');
 
         $first_day_in_month = mktime(0, 0, 0, $this->month, 1, $this->year);
@@ -192,7 +191,6 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
                 $days_in_this_week++;
                 $day_counter++;
             }
-
         }
 
         if ($days_in_this_week < 8) {
@@ -281,9 +279,9 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
             }
 
             foreach ($dayOfWeekArr as $index => $dayOfWeek) {
-                $class = "th cell";
+                $class = 'th cell';
                 if ($index + 1 == $week_today) {
-                    $class .= " current";
+                    $class .= ' current';
                 }
                 $content .= '<li class="' . $class . '">' . $dayOfWeek . '</li>';
             }
@@ -351,12 +349,12 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
             $eID = true;
 
             if ($eID) {
-                $showActionLink = "?eID=datesAjaxDispatcher";
-                $showActionLink .= "&extensionName=Dates";
-                $showActionLink .= "&pluginName=dates";
-                $showActionLink .= "&controllerName=Dates";
-                $showActionLink .= "&actionName=detail";
-                $showActionLink .= "&arguments[date]=" . $date->getUid();
+                $showActionLink = '?eID=datesAjaxDispatcher';
+                $showActionLink .= '&extensionName=Dates';
+                $showActionLink .= '&pluginName=dates';
+                $showActionLink .= '&controllerName=Dates';
+                $showActionLink .= '&actionName=detail';
+                $showActionLink .= '&arguments[date]=' . $date->getUid();
             } else {
                 $uriBuilder = $this->controllerContext->getUriBuilder();
                 $action = 'show';
@@ -365,7 +363,6 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
                 ];
                 $showActionLink = $uriBuilder->uriFor($action, $arguments);
             }
-
 
             if ($date->getShortTitle()) {
                 $content .= '<li class="item"><ul>';
@@ -392,7 +389,7 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
      * @param int $month
      * @param int $year
      * @param int $weekday
-     * @param boolean $renderDates
+     * @param bool $renderDates
      * @param string $class
      * @return string
      */
@@ -402,8 +399,8 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
 
         $content .= '<li class="td day day-' . $day . ' cell ' . $class . '">';
         $content .= '<ul class="inner">';
-        $content .= '<li class="date">' . sprintf("%02d", $day) . '</li>';
-        $content .= '<li class="date-background">' . sprintf("%02d", $day) . '</li>';
+        $content .= '<li class="date">' . sprintf('%02d', $day) . '</li>';
+        $content .= '<li class="date-background">' . sprintf('%02d', $day) . '</li>';
         $content .= '<li class="weekday">' . \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('tx_dates_domain_model_date.weekday.' . $weekday,
                 'Dates') . '</li>';
         if ($renderDates) {
@@ -454,7 +451,4 @@ class MonthWithUnorderedListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\
             $this->month = $month;
         }
     }
-
 }
-
-?>

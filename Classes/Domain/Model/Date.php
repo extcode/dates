@@ -18,7 +18,6 @@ namespace Extcode\Dates\Domain\Model;
 /**
  * Date Model
  *
- * @package date
  * @author Daniel Lorenz <ext.dates@extco.de>
  */
 class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
@@ -27,7 +26,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * typ
      *
-     * @var integer
+     * @var int
      * @validate NotEmpty
      */
     protected $typ = 0;
@@ -35,7 +34,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * targetGroup
      *
-     * @var integer
+     * @var int
      * @validate NotEmpty
      */
     protected $targetGroup = 0;
@@ -58,7 +57,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * isFullTime
      *
-     * @var boolean
+     * @var bool
      */
     protected $isFullTime = false;
 
@@ -116,14 +115,14 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * isBookable
      *
-     * @var boolean
+     * @var bool
      */
     protected $isBookable = false;
 
     /**
      * isTeaser
      *
-     * @var boolean
+     * @var bool
      */
     protected $isTeaser = false;
 
@@ -145,7 +144,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Product constructor.
-     *
      */
     public function __construct()
     {
@@ -156,7 +154,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the typ
      *
-     * @return integer $typ
+     * @return int $typ
      */
     public function getTyp()
     {
@@ -166,8 +164,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the typ
      *
-     * @param integer $typ
-     * @return void
+     * @param int $typ
      */
     public function setTyp($typ)
     {
@@ -177,7 +174,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the targetGroup
      *
-     * @return integer $targetGroup
+     * @return int $targetGroup
      */
     public function getTargetGroup()
     {
@@ -187,8 +184,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the targetGroup
      *
-     * @param integer $targetGroup
-     * @return void
+     * @param int $targetGroup
      */
     public function setTargetGroup($targetGroup)
     {
@@ -209,7 +205,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the title
      *
      * @param string $title
-     * @return void
      */
     public function setTitle($title)
     {
@@ -226,7 +221,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * @param string $shortTitle
-     * @return void
      */
     public function setShortTitle($shortTitle)
     {
@@ -236,7 +230,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the isFullTime
      *
-     * @return boolean $isFullTime
+     * @return bool $isFullTime
      */
     public function getIsFullTime()
     {
@@ -246,8 +240,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the isFullTime
      *
-     * @param boolean $isFullTime
-     * @return void
+     * @param bool $isFullTime
      */
     public function setIsFullTime($isFullTime)
     {
@@ -257,7 +250,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the boolean state of isFullTime
      *
-     * @return boolean
+     * @return bool
      */
     public function isIsFullTime()
     {
@@ -278,7 +271,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the start
      *
      * @param DateTime $start
-     * @return void
      */
     public function setStart($start)
     {
@@ -299,7 +291,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the end
      *
      * @param DateTime $end
-     * @return void
      */
     public function setEnd($end)
     {
@@ -336,7 +327,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the website
      *
      * @param string $website
-     * @return void
      */
     public function setWebsite($website)
     {
@@ -357,7 +347,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the fairHall
      *
      * @param string $fairHall
-     * @return void
      */
     public function setFairHall($fairHall)
     {
@@ -378,7 +367,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the boothNumber
      *
      * @param string $boothNumber
-     * @return void
      */
     public function setBoothNumber($boothNumber)
     {
@@ -399,7 +387,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the description
      *
      * @param string $description
-     * @return void
      */
     public function setDescription($description)
     {
@@ -409,7 +396,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the isBookable
      *
-     * @return boolean $isBookable
+     * @return bool $isBookable
      */
     public function getIsBookable()
     {
@@ -419,8 +406,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the isBookable
      *
-     * @param boolean $isBookable
-     * @return void
+     * @param bool $isBookable
      */
     public function setIsBookable($isBookable)
     {
@@ -430,7 +416,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the isTeaser
      *
-     * @return boolean $isTeaser
+     * @return bool $isTeaser
      */
     public function getIsTeaser()
     {
@@ -440,8 +426,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the isTeaser
      *
-     * @param boolean $isTeaser
-     * @return void
+     * @param bool $isTeaser
      */
     public function setIsTeaser($isTeaser)
     {
@@ -451,7 +436,7 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the boolean state of isTeaser
      *
-     * @return boolean
+     * @return bool
      */
     public function isIsTeaser()
     {
@@ -462,8 +447,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Adds a Locations
      *
      * @param \Extcode\Dates\Domain\Model\Location $location
-     *
-     * @return void
      */
     public function addLocation(\Extcode\Dates\Domain\Model\Location $location)
     {
@@ -474,8 +457,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Removes a Locations
      *
      * @param \Extcode\Dates\Domain\Model\Location $locationToRemove
-     *
-     * @return void
      */
     public function removeLocation(\Extcode\Dates\Domain\Model\Location $locationToRemove)
     {
@@ -496,8 +477,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the locations
      *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage <\Extcode\Dates\Domain\Model\Location> $locations
-     *
-     * @return void
      */
     public function setLocations(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $locations)
     {
@@ -508,7 +487,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Adds a Representatives
      *
      * @param \Extcode\Dates\Domain\Model\Representative $representative
-     * @return void
      */
     public function addRepresentative(\Extcode\Dates\Domain\Model\Representative $representative)
     {
@@ -519,7 +497,6 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Removes a Representatives
      *
      * @param \Extcode\Dates\Domain\Model\Representative $representativeToRemove The Representatives to be removed
-     * @return void
      */
     public function removeRepresentative(\Extcode\Dates\Domain\Model\Representative $representativeToRemove)
     {
@@ -540,11 +517,9 @@ class Date extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the representative
      *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage <\Extcode\Dates\Domain\Model\Representative> $representative
-     * @return void
      */
     public function setRepresentative(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $representative)
     {
         $this->representative = $representative;
     }
-
 }
